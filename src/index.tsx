@@ -15,6 +15,8 @@ import Routes from './routes';
 import { router } from './mobx';
 
 import 'semantic-ui-css/semantic.min.css';
+import Loading from './components/loading';
+import './apis/axios.api';
 
 Sentry.init({dsn: "https://00274bdac85e493c92e8fd7aa54919da@o403749.ingest.sentry.io/5266801"});
 
@@ -25,6 +27,7 @@ const history = syncHistoryWithStore(browserHistory, router);
 ReactDOM.render(
   <React.StrictMode>
   <Provider {...store}>
+    <Loading/>
     <Router history={history}>
       <Routes/>
     </Router>
