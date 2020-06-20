@@ -37,6 +37,6 @@
     "noEmit": true
   },
   "include": [
-    "src"
+    "src", "public/cache"
   ]
 }
