@@ -22,7 +22,7 @@ export const loadingOn = () => {
 
 export const loadingOff = () => {
 
-  debugger;
+  //debugger;
 
   const el = (document.querySelector('#loadingSpinner')) as any;
   if (el === null) {
