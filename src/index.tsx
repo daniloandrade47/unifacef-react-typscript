@@ -14,6 +14,8 @@ import Routes from './routes';
 
 import { router } from './mobx';
 
+import './plugins/sentry.plugin';
+import './plugins/one-signal.plugin';
 import 'semantic-ui-css/semantic.min.css';
 import Loading from './components/loading';
 import './apis/axios.api';
