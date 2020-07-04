@@ -8,6 +8,7 @@ import StarWarsDetails from '../containers/star-wars-details';
 import Tags from '../containers/tags';
 import Register from '../containers/register';
 import Corona from '../containers/corona';
+import Login from '../containers/login';
 
 const publicUrl = process.env.PUBLIC_URL;
 
@@ -26,4 +27,10 @@ export const endpoints: EndPointsProps[] = [
   { path: `${publicUrl}/tags`, name: 'Tags', component: Tags, exact: true },
   { path: `${publicUrl}/register`, name: 'Register', component: Register, exact: true },
   { path: `${publicUrl}/corona`, name: 'Corona', component: Corona, exact: true },
+];
+
+export const loginEndpoints: EndPointsProps[] = [
+  { path: `${publicUrl}/`, component: Login, exact: true },
+  { path: `${publicUrl}/logout`, component: Login, exact: true },
+  { path: `${publicUrl}/login`, component: Login, exact: true },
 ];
